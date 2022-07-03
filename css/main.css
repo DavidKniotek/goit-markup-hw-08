@@ -83,32 +83,30 @@ img {
 .container {
   max-width: 100%;
   padding: 0 15px;
-  margin-top: 16px;
 }
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  color: var(--text-color);
-}
-.section__header {
+.hero .container {
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  flex-direction: column;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.75;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 1.7;
   text-align: center;
-  letter-spacing: 0.03em;
-}
-.section--without-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-  color: var(--text-color);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding: 0 15px;
+    margin: 16px 0;
+  }
+}
 .backdrop {
   position: fixed;
   left: 0;
@@ -347,22 +345,20 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/backgroundimg.jpg");
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/backgroundimg-mobilex1.jpg");
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
-  max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin: 0 auto;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background;
 }
 .hero__header {
-  margin-top: 106px;
+  margin-top: 118px;
   margin-bottom: 30px;
-  width: 696px;
+  width: 365px;
 }
 
 .loremipsum__list {

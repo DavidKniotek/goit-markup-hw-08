@@ -1,11 +1,30 @@
 .container {
     max-width: 100%;
     padding: 0 15px;
-    margin-top: 16px;
+
+    .hero & {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 17px;
+        line-height: 1.7;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
 }
 
 @media screen and (min-width: 480px) {
-    .container {}
+    .container {
+        max-width: 480px;
+        padding: 0 15px;
+        margin: 16px 0;
+    }
 }
 
 @media screen and (min-width: 768px) {
