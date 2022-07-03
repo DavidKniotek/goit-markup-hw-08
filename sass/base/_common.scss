@@ -1,0 +1,67 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.link {
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    color: var(--text-color);
+
+    &:hover,
+    &:focus {
+        color: var(--webstudio-color);
+        cursor: pointer;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: color;
+    }
+
+    &::selection {
+        color: var(--webstudio-color);
+    }
+
+    &--active {
+        color: var(--webstudio-color);
+    }
+}
+
+.address {
+    &--color {
+        color: #FFFFFF;
+    }
+
+    &--style {
+        font-style: normal;
+    }
+}

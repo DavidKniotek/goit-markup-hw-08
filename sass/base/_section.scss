@@ -1,0 +1,24 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    color: var(--text-color);
+
+    &__header {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.75;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    &--without-padding {
+        padding-top: 0;
+        padding-bottom: 0;
+        color: var(--text-color);
+    }
+}
