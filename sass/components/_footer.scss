@@ -1,0 +1,12 @@
+.footer {
+    background: var(--background-color);
+
+    &__list {
+    margin-right: 70px;
+    }
+
+    &__contact {
+    display: flex;
+        color: var(--contact-color);
+    }
+}
