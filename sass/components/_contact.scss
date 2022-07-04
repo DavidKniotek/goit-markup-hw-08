@@ -2,6 +2,86 @@
     display: none;
 }
 
+@media screen and (min-width: 768px) {
+
+.contact {
+        display: block;
+        margin-left: 101px;
+
+        &__top {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: var(--contact-color);
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+
+            &:not(:last-child) {
+                margin-right: 46px;
+            }
+        }
+
+        &__bottom {
+            display: flex;
+            color: var(--contact-color);
+        }
+
+        &__item {
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-property: color, fill;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            &:hover svg,
+            &:focus svg {
+                color: var(--webstudio-color);
+                fill: var(--webstudio-color);
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-property: color, fill;
+            }
+        }
+
+        &__icon {
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-property: color, fill;
+            fill: var(--contact-color);
+
+            &--envelope {
+                width: 14px;
+                height: 10px;
+                margin-right: 8px;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-property: color, fill;
+            }
+
+            &--phone {
+                width: 10px;
+                height: 14px;
+                margin-right: 8px;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-property: color, fill;
+            }
+
+            &:hover svg,
+            &:focus svg {
+                color: var(--webstudio-color);
+                fill: var(--webstudio-color);
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-property: color, fill;
+            }
+        }
+    }
+}
 
 // .contact {
 //     display: flex;

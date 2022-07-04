@@ -117,6 +117,29 @@ img {
   .container {
     max-width: 768px;
   }
+  .header .container {
+    display: flex;
+    align-items: center;
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+  .hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    height: 400px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0 187px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -237,6 +260,73 @@ img {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .contact {
+    display: block;
+    margin-left: 101px;
+  }
+  .contact__top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--contact-color);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .contact__top:not(:last-child) {
+    margin-right: 46px;
+  }
+  .contact__bottom {
+    display: flex;
+    color: var(--contact-color);
+  }
+  .contact__item {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, fill;
+  }
+  .contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .contact__item:hover svg, .contact__item:focus svg {
+    color: var(--webstudio-color);
+    fill: var(--webstudio-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, fill;
+  }
+  .contact__icon {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, fill;
+    fill: var(--contact-color);
+  }
+  .contact__icon--envelope {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, fill;
+  }
+  .contact__icon--phone {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, fill;
+  }
+  .contact__icon:hover svg, .contact__icon:focus svg {
+    color: var(--webstudio-color);
+    fill: var(--webstudio-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, fill;
+  }
+}
 .footer {
   background: var(--background-color);
 }
@@ -345,9 +435,19 @@ img {
   margin-bottom: 30px;
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .container {
-    background-image: url("../images/backgroundimg-mobilex2.jpg");
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/backgroundimg-tabletx1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background;
+  }
+  .hero__header {
+    margin-bottom: 30px;
   }
 }
 /*
@@ -516,6 +616,11 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .main-logo {
+    padding-right: 83px;
+  }
+}
 .modal-window {
   position: absolute;
   top: 50%;
@@ -692,6 +797,36 @@ input {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+  }
+  .navigation__list {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  }
+  .navigation__item {
+    position: relative;
+  }
+  .navigation__item:not(:last-child) {
+    margin-right: 60px;
+  }
+
+  .active-page::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--webstudio-color);
+    border-radius: 2px;
+    bottom: -38px;
+  }
+}
 .newsletter-form__label {
   position: relative;
 }
