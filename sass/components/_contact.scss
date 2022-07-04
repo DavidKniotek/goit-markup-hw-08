@@ -1,69 +1,74 @@
 .contact {
-    display: flex;
-    margin-left: auto;
-    
-    &__top {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--contact-color);
-
-        &:not(:last-child) {
-            margin-right: 46px;
-        }
-    }
-
-    &__bottom {
-        display: flex;
-        color: var(--contact-color);
-    }
-
-    &__item {
-        margin-right: 30px;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-property: color, fill;
-
-        &:hover svg,
-        &:focus svg {
-            color: var(--webstudio-color);
-            fill: var(--webstudio-color);
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-property: color, fill;
-            }
-    }
-
-    &__icon {
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-property: color, fill;
-
-        &--envelope {
-            width: 16px;
-            height: 12px;
-            margin-right: 10px;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-property: color, fill;
-        }
-
-        &--phone {
-            width: 10px;
-            height: 16px;
-            margin-right: 10px;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-property: color, fill;
-        }
-
-        &:hover svg,
-        &:focus svg {
-            color: var(--webstudio-color);
-            fill: var(--webstudio-color);
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-property: color, fill;
-        }
-    }
+    display: none;
 }
+
+
+// .contact {
+//     display: flex;
+//     margin-left: auto;
+    
+//     &__top {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         color: var(--contact-color);
+
+//         &:not(:last-child) {
+//             margin-right: 46px;
+//         }
+//     }
+
+//     &__bottom {
+//         display: flex;
+//         color: var(--contact-color);
+//     }
+
+//     &__item {
+//         margin-right: 30px;
+//         transition-duration: 250ms;
+//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//         transition-property: color, fill;
+
+//         &:hover svg,
+//         &:focus svg {
+//             color: var(--webstudio-color);
+//             fill: var(--webstudio-color);
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//             transition-property: color, fill;
+//             }
+//     }
+
+//     &__icon {
+//         transition-duration: 250ms;
+//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//         transition-property: color, fill;
+
+//         &--envelope {
+//             width: 16px;
+//             height: 12px;
+//             margin-right: 10px;
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//             transition-property: color, fill;
+//         }
+
+//         &--phone {
+//             width: 10px;
+//             height: 16px;
+//             margin-right: 10px;
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//             transition-property: color, fill;
+//         }
+
+//         &:hover svg,
+//         &:focus svg {
+//             color: var(--webstudio-color);
+//             fill: var(--webstudio-color);
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//             transition-property: color, fill;
+//         }
+//     }
+// }
