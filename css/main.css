@@ -517,6 +517,52 @@ img {
   color: var(--contact-color);
 }
 
+@media screen and (min-width: 768px) {
+  .loremipsum__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .loremipsum__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .loremipsum__icon {
+    width: 70px;
+    height: 70px;
+  }
+  .loremipsum__icon-item {
+    display: flex;
+    justify-content: center;
+    width: 354px;
+    height: 120px;
+    padding: 25px 0;
+    margin-bottom: 30px;
+    background-color: var(--loremipsum-icon-color);
+  }
+  .loremipsum__header {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    width: 354px;
+  }
+  .loremipsum__description {
+    display: flex;
+    width: 354px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--contact-color);
+  }
+}
 .services__list {
   display: flex;
 }
