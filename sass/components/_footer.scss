@@ -12,6 +12,14 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .footer {
+        &__list {
+            margin-left: 61px;
+        }
+    }
+}
+
 
 // .footer {
 //     background: var(--background-color);

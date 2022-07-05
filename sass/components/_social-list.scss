@@ -88,8 +88,25 @@
         margin-left: 0px;
         padding-bottom: 0px;
     }
+
+    &--footer-header-tablet {
+        margin-top: 60px;
+    }
 }
 
+@media screen and (min-width: 768px) {
+    .social-list {
+
+        &__footer-header {
+            padding-top: 5px;
+        }
+
+        &--in-footer {
+            margin-left: 144px;
+        }
+
+    }
+}
 
 
 // .social-list {

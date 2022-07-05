@@ -1,5 +1,18 @@
 .newsletter-form {
 
+    &__header {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #fff;
+        padding-top: 52px;
+        margin-bottom: 20px;
+    }
+
     &__label {
         position: relative;
     }
@@ -39,7 +52,21 @@
     }
 }
 
+@media screen and (min-width: 768px) {
 
+    .newsletter-form {
+
+        &__header {
+            text-align: left;
+            margin-left: 273px;
+        }
+        
+        &__email {
+            display: block;
+            margin-left: 151px;
+        }
+    }
+}
 
 // .newsletter-form {
 
