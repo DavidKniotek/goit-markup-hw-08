@@ -1090,9 +1090,9 @@ input {
 .social-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-right: 32px;
-  margin-left: 32px;
+  justify-content: center;
+  margin-right: 16px;
+  margin-left: 24px;
   padding-bottom: 30px;
 }
 .social-list__link {
@@ -1107,6 +1107,7 @@ input {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill, background-color;
+  margin-right: 10px;
 }
 .social-list__link:hover, .social-list__link:focus {
   fill: #FFFFFF;
