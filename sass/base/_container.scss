@@ -42,6 +42,10 @@
         letter-spacing: 0.03em;
         text-align: center;
     }
+
+        .pic-box & {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 480px) {
@@ -132,10 +136,10 @@
 //         display: flex;
 //     }
 
-//     .pic-box & {
-//         display: flex;
-//         justify-content: space-evenly;
-//     }
+    // .pic-box & {
+    //     display: flex;
+    //     justify-content: space-evenly;
+    // }
 
     // .footer & {
     //     display: flex;
