@@ -59,9 +59,21 @@ img {
 .address {
     &--color {
         color: #FFFFFF;
+        margin-bottom: 8px;
     }
 
     &--style {
         font-style: normal;
     }
 }
+
+
+// .address {
+//     &--color {
+//         color: #FFFFFF;
+//     }
+
+//     &--style {
+//         font-style: normal;
+//     }
+// }

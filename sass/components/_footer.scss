@@ -2,11 +2,26 @@
     background: var(--background-color);
 
     &__list {
-    margin-right: 70px;
+    margin-right: 0;
     }
 
     &__contact {
-    display: flex;
-        color: var(--contact-color);
+    display: block;
+    color: var(--contact-color);
+    margin-bottom: 8px;
     }
 }
+
+
+// .footer {
+//     background: var(--background-color);
+
+//     &__list {
+//         margin-right: 70px;
+//     }
+
+//     &__contact {
+//         display: flex;
+//         color: var(--contact-color);
+//     }
+// }

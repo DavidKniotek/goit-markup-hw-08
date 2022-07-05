@@ -44,22 +44,19 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #fff;
-        padding-top: 12px;
+        padding-top: 52px;
         margin-bottom: 20px;
     }
 
     &__footer-list {
         display: flex;
-        justify-content: space-between
+        justify-content: center;
+        margin-bottom: 8px;
     }
 
     &__footer-item {
         &:not(:last-child) {
             margin-right: 10px;
-        }
-
-        &:last-child {
-            margin-right: 78px;
         }
     }
 
