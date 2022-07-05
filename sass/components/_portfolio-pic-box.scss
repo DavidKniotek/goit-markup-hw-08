@@ -3,10 +3,13 @@
     flex-wrap: wrap;
 
     &__item {
-        margin-bottom: 30px;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: box-shadow;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
 
         &:hover,
         &:focus {
@@ -113,6 +116,12 @@
 @media screen and (min-width: 768px) {
 
     .pics {
+
+        &__item {
+            &:nth-child(2n + 1) {
+                margin-right: 30px;
+            }
+        }
 
         &__img {
             width: 354px;
