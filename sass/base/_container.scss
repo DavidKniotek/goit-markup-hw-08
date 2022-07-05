@@ -26,6 +26,10 @@
         color: #FFFFFF;
         padding: 0 42px;
     }
+    .loremipsum & {
+        display: flex;
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 480px) {
@@ -99,11 +103,6 @@
 //         letter-spacing: 0.06em;
 //         text-transform: uppercase;
 //         color: #FFFFFF;
-//     }
-
-//     .loremipsum & {
-//         display: flex;
-//         font-size: 14px;
 //     }
 
 //     .services & {
