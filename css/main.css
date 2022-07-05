@@ -383,6 +383,9 @@ img {
   transition-property: border-color;
   margin-bottom: 30px;
 }
+.customers__item:nth-child(n+5) {
+  margin-bottom: 0;
+}
 .customers__item:hover, .customers__item:focus {
   border: 1px solid var(--webstudio-color);
   transition-duration: 250ms;
@@ -460,6 +463,9 @@ img {
   }
   .customers__item:nth-child(3n+3) {
     margin-right: 0;
+  }
+  .customers__item:nth-child(n+4) {
+    margin-bottom: 0;
   }
 }
 .hero {
@@ -555,12 +561,18 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .loremipsum {
+    margin-bottom: 45px;
+  }
   .loremipsum__list {
     display: flex;
     flex-wrap: wrap;
   }
   .loremipsum__item:nth-child(2n+1) {
     margin-right: 30px;
+  }
+  .loremipsum__item:nth-child(n+3) {
+    margin-bottom: 0;
   }
   .loremipsum__icon {
     width: 70px;
@@ -690,6 +702,9 @@ img {
   }
   .team__item:nth-child(2n+1) {
     margin-right: 30px;
+  }
+  .team__item:nth-child(n+3) {
+    margin-bottom: 0;
   }
   .team__description-field {
     background-color: white;

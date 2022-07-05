@@ -18,6 +18,10 @@
         transition-property: border-color;
         margin-bottom: 30px;
 
+        &:nth-child(n + 5) {
+            margin-bottom: 0;
+        }
+
         &:hover,
         &:focus {
             border: 1px solid var(--webstudio-color);
@@ -121,6 +125,9 @@
 
             &:nth-child(3n + 3) {
                 margin-right: 0;
+            }
+            &:nth-child(n + 4) {
+                margin-bottom: 0;
             }
         }
     }
