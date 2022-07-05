@@ -1082,17 +1082,10 @@ input {
   flex-wrap: wrap;
 }
 .pics__item {
-  margin-right: 30px;
   margin-bottom: 30px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow;
-}
-.pics__item:nth-child(3n+3) {
-  margin-right: 0px;
-}
-.pics__item:nth-last-child(-n+3) {
-  margin-bottom: 0;
 }
 .pics__item:hover, .pics__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1180,6 +1173,11 @@ input {
   transition-property: top, left, width, height, background-color, transform;
 }
 
+@media screen and (min-width: 768px) {
+  .pics__img {
+    width: 354px;
+  }
+}
 .header-border {
   border: 1px solid #ECECEC;
   margin-bottom: 60px;
