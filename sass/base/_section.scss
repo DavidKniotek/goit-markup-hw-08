@@ -14,6 +14,14 @@
         text-align: center;
         letter-spacing: 0.03em;
     }
+    &--without-padding {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &--without-margin {
+        margin-bottom: 0;
+    }
 }
 
 

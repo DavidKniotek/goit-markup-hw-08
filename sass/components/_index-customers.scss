@@ -2,21 +2,23 @@
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__item {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 170px;
+        width: 210px;
         height: 92px;
         border: 1px solid var(--social-media-color);
         border-radius: 4px;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: border-color;
+        margin-bottom: 30px;
 
-        &:not(:last-child) {
+        &:nth-child(2n+1) {
             margin-right: 30px;
         }
 
@@ -38,7 +40,7 @@
         }
 
     }
-    
+
     &__link {
         display: flex;
         fill: var(--social-media-color);
@@ -100,3 +102,109 @@
         }
     }
 }
+
+
+
+
+// .customers {
+
+//     &__list {
+//         display: flex;
+//     }
+
+//     &__item {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         width: 170px;
+//         height: 92px;
+//         border: 1px solid var(--social-media-color);
+//         border-radius: 4px;
+//         transition-duration: 250ms;
+//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//         transition-property: border-color;
+
+//         &:not(:last-child) {
+//             margin-right: 30px;
+//         }
+
+//         &:hover,
+//         &:focus {
+//             border: 1px solid var(--webstudio-color);
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//             transition-property: border-color;
+//         }
+
+//         &:hover svg,
+//         &:focus svg {
+//             color: var(--webstudio-color);
+//             fill: var(--webstudio-color);
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//             transition-property: color, fill;
+//         }
+
+//     }
+    
+//     &__link {
+//         display: flex;
+//         fill: var(--social-media-color);
+//     }
+
+//     &__icon {
+//         &--1 {
+//             width: 41px;
+//             height: 47px;
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//             transition-property: color, fill;
+//         }
+
+//         &--2 {
+//             width: 40px;
+//             height: 52px;
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//             transition-property: color, fill;
+//         }
+
+//         &--3 {
+//             width: 43px;
+//             height: 41px;
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//             transition-property: color, fill;
+//         }
+
+//         &--4 {
+//             width: 84px;
+//             height: 41px;
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//             transition-property: color, fill;
+//         }
+
+//         &--5 {
+//             width: 63px;
+//             height: 45px;
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//             transition-property: color, fill;
+//         }
+
+//         &--6 {
+//             width: 94px;
+//             height: 44px;
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//             transition-property: color, fill;
+//         }
+
+//         svg {
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//             transition-property: color, fill;
+//         }
+//     }
+// }

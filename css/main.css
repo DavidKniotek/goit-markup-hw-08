@@ -166,6 +166,13 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.section--without-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.section--without-margin {
+  margin-bottom: 0;
+}
 
 /*
 .section {
@@ -361,20 +368,22 @@ img {
 
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
 }
 .customers__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--social-media-color);
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: border-color;
+  margin-bottom: 30px;
 }
-.customers__item:not(:last-child) {
+.customers__item:nth-child(2n+1) {
   margin-right: 30px;
 }
 .customers__item:hover, .customers__item:focus {
