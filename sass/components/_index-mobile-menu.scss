@@ -1,0 +1,32 @@
+@media screen and (max-width: 767px) {
+
+.js-open-menu {
+
+    border: none;
+    background-color: #fff;
+    position: absolute;
+    left: 90%;
+    padding: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--webstudio-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: fill;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 16px;
+    }
+}
+}
+
+@media screen and (min-width: 768px) {
+    .js-open-menu {
+        display: none;
+    }
+}
