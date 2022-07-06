@@ -92,6 +92,31 @@
     &--footer-header-tablet {
         margin-top: 60px;
     }
+
+    &__mobile-social-media-list {
+        display: flex;
+    }
+
+    &__mobile-social-media-item {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-right: 10px;
+    }
+
+    &__mobile-social-media-border {
+
+        &::after {
+            content: "";
+            width: 22px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            transform: rotate(90deg);
+            margin-left: 10px;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {

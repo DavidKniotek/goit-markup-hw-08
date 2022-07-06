@@ -59,10 +59,10 @@ img {
   transition-property: color;
   color: var(--text-color);
 }
-.link--mobile-phone {
+.link--webstudio-color {
   color: var(--webstudio-color);
 }
-.link--mobile-email {
+.link--contact-color {
   color: var(--contact-color);
 }
 .link:hover, .link:focus {
@@ -1012,6 +1012,10 @@ img {
   width: 18px;
   height: 18px;
 }
+.close-btn__mobile-icon {
+  width: 40px;
+  height: 40px;
+}
 
 label:focus-within svg {
   fill: var(--webstudio-color);
@@ -1352,6 +1356,25 @@ input {
 }
 .social-list--footer-header-tablet {
   margin-top: 60px;
+}
+.social-list__mobile-social-media-list {
+  display: flex;
+}
+.social-list__mobile-social-media-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-right: 10px;
+}
+.social-list__mobile-social-media-border::after {
+  content: "";
+  width: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
