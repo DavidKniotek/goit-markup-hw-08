@@ -880,6 +880,11 @@ img {
     padding-right: 83px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .main-logo {
+    padding-right: 93px;
+  }
+}
 @media screen and (max-width: 767px) {
   .menu-toggle {
     border: none;
