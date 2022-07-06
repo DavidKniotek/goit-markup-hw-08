@@ -114,6 +114,36 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+
+    .loremipsum {
+        margin-bottom: 0;
+
+        &__list {
+            flex-wrap: nowrap;
+        }
+
+        &__item {
+
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+
+        &__icon-item {
+            width: 270px;
+        }
+
+        &__header {
+            width: 270px;
+        }
+
+        &__description {
+            width: 270px;
+        }
+    }
+}
+
 
 // .loremipsum {
 

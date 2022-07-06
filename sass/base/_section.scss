@@ -24,7 +24,24 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
 
+    .section {
+        margin-bottom: 0;
+        padding: 94px 0;
+
+        &__header {
+            padding-top: 0;
+            margin-bottom: 50px;
+            font-size: 36px;
+            line-height: 1.75;
+        }
+
+        &--without-padding {
+            padding: 0;
+        }
+    }
+}
 /*
 .section {
     padding-top: 94px;

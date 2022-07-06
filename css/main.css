@@ -239,6 +239,21 @@ img {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    margin-bottom: 0;
+    padding: 94px 0;
+  }
+  .section__header {
+    padding-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.75;
+  }
+  .section--without-padding {
+    padding: 0;
+  }
+}
 /*
 .section {
     padding-top: 94px;
@@ -710,6 +725,26 @@ img {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--contact-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .loremipsum {
+    margin-bottom: 0;
+  }
+  .loremipsum__list {
+    flex-wrap: nowrap;
+  }
+  .loremipsum__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .loremipsum__icon-item {
+    width: 270px;
+  }
+  .loremipsum__header {
+    width: 270px;
+  }
+  .loremipsum__description {
+    width: 270px;
   }
 }
 @media screen and (max-width: 1199px) {
