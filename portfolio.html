@@ -25,6 +25,11 @@
     <header class="header header-border">
       <div class="container">
         <p class="main-logo"><a class="link main-logo__up-color" href="./index.html"><span class="main-logo__main-color">Web</span>Studio</a></p>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle__icon">
+            <use href="images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -282,5 +287,60 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close-btn__mobile-icon">
+          <use href="images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <ul class="mobile-navigation">
+        <li class="mobile-navigation__item">
+          <a class="link" href="./index.html">Agencja</a>
+        </li>
+        <li class="mobile-navigation__item">
+          <a class="link link--active active-page" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-navigation__item">
+          <a class="link" href="./kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="mobile-navigation__phone">
+          <a class="link link--webstudio-color" href="tel:48111111111">
+            +48 111 111 111
+          </a>
+        </li>
+        <li class="mobile-navigation__email">
+          <a class="link link--contact-color" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <div>
+        <ul class="social-list__mobile-social-media-list">
+          <li class="social-list__mobile-social-media-item social-list__mobile-social-media-border">
+            <a class="link link--webstudio-color" href="#">
+              Instagram
+            </a>
+          </li>
+          <li class="social-list__mobile-social-media-item social-list__mobile-social-media-border">
+            <a class="link link--webstudio-color" href="#">
+              Twitter
+            </a>
+          </li>
+          <li class="social-list__mobile-social-media-item social-list__mobile-social-media-border">
+            <a class="link link--webstudio-color" href="#">
+              Facebook
+            </a>
+          </li>
+          <li class="social-list__mobile-social-media-item">
+            <a class="link link--webstudio-color" href="#">
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
