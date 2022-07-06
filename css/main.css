@@ -392,6 +392,27 @@ img {
     transition-property: color, fill;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+    margin-left: auto;
+  }
+  .contact__top {
+    justify-content: center;
+  }
+  .contact__item {
+    margin-right: 30px;
+  }
+  .contact__icon--envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  .contact__icon--phone {
+    height: 16px;
+    margin-right: 10px;
+  }
+}
 .footer {
   background: var(--background-color);
 }
@@ -1141,7 +1162,7 @@ input {
   }
 
   .active-page::after {
-    bottom: -32px;
+    bottom: -34px;
   }
 }
 .newsletter-form__header {
