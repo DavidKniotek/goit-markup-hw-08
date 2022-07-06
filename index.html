@@ -33,19 +33,19 @@
           >
         </p>
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="js-open-menu__icon">
+          <svg class="menu-toggle__icon">
             <use href="images/icons.svg#icon-mobile-menu"></use>
           </svg>
         </button>
         <nav class="navigation">
           <ul class="navigation__list">
-            <li class="navigation__item">
+            <li class="mobile-navigation__item">
               <a class="link link--active active-page" href="./index.html">Agencja</a>
             </li>
-            <li class="navigation__item">
+            <li class="mobile-navigation__item">
               <a class="link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="navigation__item">
+            <li class="mobile-navigation__item">
               <a class="link" href="./kontakt.html">Kontakt</a>
             </li>
           </ul>
@@ -516,6 +516,26 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close-btn__icon">
+          <use href="images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <ul class="mobile-navigation">
+            <li class="mobile-navigation__item">
+              <a class="link link--active active-page" href="./index.html">Agencja</a>
+            </li>
+            <li class="mobile-navigation__item">
+              <a class="link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-navigation__item">
+              <a class="link" href="./kontakt.html">Kontakt</a>
+            </li>
+      </ul>
+    </div>
     <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
