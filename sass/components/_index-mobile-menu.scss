@@ -43,28 +43,14 @@
     transform: translateX(0);
 }
 
-.mobile-navigation {
-
-    &__item {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-
-        &:not(:last-child) {
-            margin-bottom: 32px;
-        }
-    }
 }
-
-}
-
 
 
 @media screen and (min-width: 768px) {
-    .menu-toggle {
+    .menu-toggle,
+    .menu-container,
+    .menu-container.is-open,
+    .mobile-navigation {
         display: none;
     }
 }

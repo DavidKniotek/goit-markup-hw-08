@@ -1,6 +1,47 @@
+@media screen and (max-width: 767px) {
+
 .navigation {
     display: none;
 }
+
+.mobile-navigation {
+
+    &__item {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__phone {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-top: 302px;
+        margin-bottom: 32px;
+    }
+
+    &__email {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-bottom: 64px;
+    }
+}
+}
+
 
 @media screen and (min-width: 768px) {
 
