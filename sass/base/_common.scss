@@ -25,6 +25,10 @@ ol {
 p {
     padding: 0;
     margin: 0;
+
+    &.space-right {
+        margin-right: 5px;
+    }
 }
 
 img {
