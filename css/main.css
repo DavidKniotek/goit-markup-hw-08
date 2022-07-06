@@ -1135,6 +1135,15 @@ input {
     bottom: -38px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .navigation__item:not(:last-child) {
+    margin-right: 46px;
+  }
+
+  .active-page::after {
+    bottom: -32px;
+  }
+}
 .newsletter-form__header {
   font-family: "Roboto";
   font-style: normal;

@@ -82,6 +82,25 @@
 }
 
 
+@media screen and (min-width: 1200px) {
+
+    .navigation {
+
+        &__item {
+            &:not(:last-child) {
+                margin-right: 46px;
+            }
+        }
+    }
+
+    .active-page {
+
+        &::after {
+            bottom: -32px;
+        }
+    }
+}
+
 // .navigation {
 //     display: flex;
 
