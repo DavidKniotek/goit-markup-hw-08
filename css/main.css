@@ -638,9 +638,6 @@ img {
 .loremipsum__list {
   display: block;
 }
-.loremipsum__item:not(:last-child) {
-  margin-bottom: 30px;
-}
 .loremipsum__icon {
   width: 70px;
   height: 70px;
@@ -675,10 +672,12 @@ img {
   color: var(--contact-color);
 }
 
-@media screen and (min-width: 768px) {
-  .loremipsum {
-    margin-bottom: 45px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .loremipsum__item:not(:last-child) {
+    margin-bottom: 30px;
   }
+}
+@media screen and (min-width: 768px) {
   .loremipsum__list {
     display: flex;
     flex-wrap: wrap;
@@ -727,10 +726,15 @@ img {
     color: var(--contact-color);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .loremipsum {
     margin-bottom: 0;
   }
+  .loremipsum__description {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .loremipsum__list {
     flex-wrap: nowrap;
   }

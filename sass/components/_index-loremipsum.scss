@@ -4,13 +4,6 @@
         display: block;
     }
 
-    &__item {
-
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
-    }
-
     &__icon {
         width: 70px;
         height: 70px;
@@ -50,9 +43,20 @@
 }
 
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+.loremipsum {
+    &__item {
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+}
+
+
 @media screen and (min-width: 768px) {
 .loremipsum {
-    margin-bottom: 45px;
 
         &__list {
             display: flex;
@@ -114,10 +118,19 @@
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .loremipsum {
+        margin-bottom: 0;
+
+        &__description {
+        margin-bottom: 45px;
+        }
+    }
+}
+
 @media screen and (min-width: 1200px) {
 
     .loremipsum {
-        margin-bottom: 0;
 
         &__list {
             flex-wrap: nowrap;
