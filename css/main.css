@@ -1046,6 +1046,29 @@ input {
   outline: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    width: 528px;
+    min-height: 581px;
+  }
+  .modal-window__header {
+    line-height: 1.15;
+  }
+  .modal-window__item-box {
+    width: 448px;
+  }
+  .modal-window__item-feedback {
+    width: 448px;
+  }
+  .modal-window__checkbox {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .before-checkbox::before {
+    margin-left: 14px;
+  }
+}
 @media screen and (max-width: 767px) {
   .navigation {
     display: none;

@@ -195,6 +195,38 @@ input {
 }
 
 
+@media screen and (min-width: 1200px) {
+
+    .modal-window {
+        width: 528px;
+        min-height: 581px;
+
+        &__header {
+            line-height: 1.15;
+        }
+
+        &__item-box {
+            width: 448px;
+        }
+
+        &__item-feedback {
+            width: 448px;
+        }
+
+        &__checkbox {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+    }
+
+    .before-checkbox {
+
+        &::before {
+            margin-left: 14px;
+        }
+    }
+}
+
 
 // .modal-window {
 //     position: absolute;
@@ -292,7 +324,7 @@ input {
 //         font-style: normal;
 //         font-weight: 400;
 //         font-size: 14px;
-//         line-height: 24px;
+//         line-height: 1.7;
 //         letter-spacing: 0.03em;
 //         color: var(--contact-color);
 //         margin-right: 14px;
