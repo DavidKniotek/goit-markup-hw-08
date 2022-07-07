@@ -22,6 +22,60 @@
     &__img {
         width: 450px;
         height: 294px;
+
+        &--imgbox01 {
+            @include retina {
+            background-image: url("./images/imgbox01@2x.jpg");
+            }
+        }
+
+        &--imgbox02 {
+            @include retina {
+            background-image: url("./images/imgbox02@2x.jpg");
+            } 
+        }
+
+        &--imgbox03 {
+            @include retina {
+            background-image: url("./images/imgbox03@2x.jpg");
+            }            
+        }
+
+        &--imgbox04 {
+            @include retina {
+            background-image: url("./images/imgbox04@2x.jpg");
+            }            
+        }
+
+        &--imgbox05 {
+            @include retina {
+            background-image: url("./images/imgbox05@2x.jpg");
+            }            
+        }
+
+        &--imgbox06 {
+            @include retina {
+            background-image: url("./images/imgbox06@2x.jpg");
+            }            
+        }
+
+        &--imgbox07 {
+            @include retina {
+            background-image: url("./images/imgbox07@2x.jpg");
+            }            
+        }
+
+        &--imgbox08 {
+            @include retina {
+            background-image: url("./images/imgbox08@2x.jpg");
+            }            
+        }
+
+        &--imgbox09 {
+            @include retina {
+            background-image: url("./images/imgbox09@2x.jpg");
+            }            
+        }
     }
 
     &__info {
