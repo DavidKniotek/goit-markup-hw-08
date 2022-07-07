@@ -20,24 +20,6 @@
         }
     }
 
-    &--img1 {
-        @include retina {
-            background-image: url("./images/img1@2x.jpg");
-        }
-    }
-
-    &--img2 {
-        @include retina {
-            background-image: url("./images/img2@2x.jpg");
-        }        
-    }
-
-    &--img3 {
-        @include retina {
-            background-image: url("./images/img3@2x.jpg");
-        }  
-    }
-
     &__banner {
         position: absolute;
         width: 370px;
