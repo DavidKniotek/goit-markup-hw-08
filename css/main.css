@@ -1468,6 +1468,11 @@ input {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .header-border {
+    margin-bottom: 0;
+  }
+}
 .social-list {
   display: flex;
   align-items: center;
