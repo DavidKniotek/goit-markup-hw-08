@@ -85,7 +85,23 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
 
+    .button {
+
+        &__portfolio {
+            padding-bottom: 50px;
+        }
+
+        &__portfolio-list {
+            flex-wrap: nowrap;
+        }
+
+        &--filters {
+            margin-bottom: 0;
+        }
+    }
+}
 
 
 // .button {
@@ -124,11 +140,12 @@
 //         align-items: center;
 //         align-self: center;
 //         justify-content: center;
-//         padding-bottom: 50px;
+//  x       padding-bottom: 50px;
 //     }
 
 //     &__portfolio-list {
 //         display: flex;
+//  x       flex-wrap: nowrap;
 //         margin-right: 8px;
 //     }
 
@@ -140,6 +157,7 @@
 //         color: #212121;
 //         box-shadow: none;
 //         margin-right: 8px;
+//  x      margin-bottom: 0;
 
 //         &:hover,
 //         &:focus {
