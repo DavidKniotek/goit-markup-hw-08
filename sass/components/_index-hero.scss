@@ -7,6 +7,10 @@
     background-position: center;
     width: 100%;
 
+    @include retina {
+        background-image: url("../images/backgroundimg-mobilex2.jpg");
+    }
+
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: background;
@@ -22,6 +26,10 @@
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url("../images/backgroundimg-tabletx1.jpg");
+
+        @include retina {
+        background-image: url("../images/backgroundimg-tabletx2.jpg");
+    }
     }
 }
 
@@ -32,6 +40,10 @@
             url("../images/backgroundimg.jpg");
         max-width: 1600px;
         margin: 0 auto;
+
+        @include retina {
+        background-image: url("../images/backgroundimg@2x.jpg");
+    }
 
         &__header {
             width: 696px;
