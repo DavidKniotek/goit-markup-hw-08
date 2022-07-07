@@ -119,7 +119,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .social-list {
 
         &__footer-header {
@@ -130,6 +130,15 @@
             margin-left: 144px;
         }
 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .social-list {
+
+        &__footer-header {
+            padding-top: 12px;
+        }
     }
 }
 
