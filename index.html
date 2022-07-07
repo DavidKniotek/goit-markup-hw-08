@@ -174,11 +174,10 @@
           <h2 class="section__header">Nasz zespół</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__member-photo"
-                src="./images/imgteam01.jpg"
-                alt="John Doe"
-              />
+              <picture>
+                <source srcset="./images/img-team-01/img-team-01.jpg 1x, ./images/img-team-01/img-team-01.jpg 2x" media="(min-width: 480px)">
+                <img class="team__member-photo" src="./images/img-team-01/img-team-01basic.jpg" alt="John Doe" width="450px" height="460px">
+              </picture>
               <div class="team__description-field">
                 <h3 class="team__member-name">John Doe</h3>
                 <p class="team__member-job">Product designer</p>
