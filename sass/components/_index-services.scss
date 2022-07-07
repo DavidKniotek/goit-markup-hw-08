@@ -20,6 +20,7 @@
         }
     }
 
+
     &__banner {
         position: absolute;
         width: 370px;
@@ -41,6 +42,24 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #FFFFFF;
+    }
+
+    &--img01 {
+        @include retina {
+        background-image: url("../images/img01@2x.jpg");
+        }
+    }
+
+    &--img02 {
+        @include retina {
+        background-image: url("../images/img02@2x.jpg");
+        }
+    }
+
+    &--img03 {
+        @include retina {
+        background-image: url("../images/img03@2x.jpg");
+        }
     }
 }
 }
