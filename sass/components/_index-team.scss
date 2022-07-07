@@ -21,6 +21,30 @@
         width: 450px;
         height: 460px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+        &--imgteam01 {
+            @include retina {
+            background-image: url("./images/imgteam01@2x.jpg");
+            }
+        }
+
+        &--imgteam02 {
+            @include retina {
+            background-image: url("./images/imgteam02@2x.jpg");
+            }
+        }
+
+        &--imgteam03 {
+            @include retina {
+            background-image: url("./images/imgteam03@2x.jpg");
+            }
+        }
+
+        &--imgteam04 {
+            @include retina {
+            background-image: url("./images/imgteam04@2x.jpg");
+            }
+        }
     }
 
     &__member-name {
