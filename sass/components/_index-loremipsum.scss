@@ -65,8 +65,9 @@
         }
 
         &__item {
+            padding: 15px;
             flex: 0 0 50%;
-            max-width: 100%;
+            max-width: 50%;
         }
 
         &__icon {
@@ -94,12 +95,10 @@
             text-align: left;
             color: var(--text-color);
             margin-bottom: 10px;
-            width: 354px;
         }
 
         &__description {
             display: flex;
-            width: 354px;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
