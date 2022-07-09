@@ -16,9 +16,18 @@ h6 {
 
 ul,
 ol {
-    margin: 0;
+    margin: -15px;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul > li {
+    margin: 15px;
+    width: 100%;
+    flex: 0 0 calc(100% - 30px);
+    max-width: calc(100% - 30px);
 }
 
 
