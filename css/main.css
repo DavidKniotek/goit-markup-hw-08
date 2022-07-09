@@ -845,7 +845,7 @@ img {
   }
 }
 .team {
-  background: #f5f4fa;
+  background: #F5F4FA;
   padding-bottom: 60px;
 }
 .team__list {
@@ -895,7 +895,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .team {
-    background: #f5f4fa;
+    background: #F5F4FA;
   }
   .team__list {
     display: flex;
