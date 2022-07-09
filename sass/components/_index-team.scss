@@ -5,7 +5,7 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        margin: -15px;
+
     }
 
     &__item {
@@ -62,107 +62,83 @@
 }
 }
 //------------------------------------------
-// @media screen and (min-width: 480px) and (max-width: 1199px) {
-//     .team {
 
-//         &__item {
-//             &:not(:last-child) {
-//                     margin-bottom: 30px;
-//                 }
-//         }
-//     }
-// }
+@media screen and (min-width: 768px) {
+.team {
+        background: #F5F4FA;
 
-// @media screen and (min-width: 768px) {
-// .team {
-//         background: #F5F4FA;
+        &__item {
+            flex: 0 0 50%;
+            max-width: 50%;
+            
+                &:nth-child(-n + 2) {
+                    margin-bottom: 30px;
+            }
+        }
 
-//         &__list {
-//             display: flex;
-//             flex-wrap: wrap;
-//         }
+        &__description-field {
+            background-color: white;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+            width: 354px;
+        }
 
-//         &__item {
-//             text-align: center;
-//         }
+        &__member-photo {
+            width: 354px;
+            height: 374px;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        }
 
-//         &__description-field {
-//             background-color: white;
-//             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-//             border-radius: 0px 0px 4px 4px;
-//             width: 354px;
-//         }
+        &__member-name {
+            padding-top: 30px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: center;
+            letter-spacing: 0.03em;
+        }
 
-//         &__member-photo {
-//             width: 354px;
-//             height: 374px;
-//             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-//         }
+        &__member-job {
+            margin-top: 10px;
+            margin-bottom: 16px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.2;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: var(--contact-color);
+        }
+    }
+}
 
-//         &__member-name {
-//             padding-top: 30px;
-//             font-family: 'Roboto';
-//             font-style: normal;
-//             font-weight: 500;
-//             font-size: 16px;
-//             line-height: 1.2;
-//             text-align: center;
-//             letter-spacing: 0.03em;
-//         }
+@media screen and (min-width: 1200px) {
+    .team {
+        padding-bottom: 94px;
 
-//         &__member-job {
-//             margin-top: 10px;
-//             margin-bottom: 16px;
-//             font-family: 'Roboto';
-//             font-style: normal;
-//             font-weight: 400;
-//             font-size: 16px;
-//             line-height: 1.2;
-//             text-align: center;
-//             letter-spacing: 0.03em;
-//             color: var(--contact-color);
-//         }
-//     }
-// }
+        &__list {
+            display: flex;
+        }
 
-// @media screen and (min-width: 768px) and (max-width: 1199px) {
-//     .team {
+        &__item {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
 
-//         &__item {
-//             &:nth-child(2n+1) {
-//                     margin-right: 30px;
-//                 }
-//             &:nth-child(n + 3) {
-//                     margin-bottom: 0;
-//                 }
-//         }
-//     }
-// }
+        &__description-field {
+            width: 270px;
+        }
 
-// @media screen and (min-width: 1200px) {
-//     .team {
-//         padding-bottom: 94px;
-
-//         &__list {
-//             display: flex;
-//         }
-
-//         &__item {
-//             &:not(:last-child) {
-//                 margin-right: 30px;
-//             }
-//         }
-
-//         &__description-field {
-//             width: 270px;
-//         }
-
-//         &__member-photo {
-//             width: 270px;
-//             height: 260px;
-//         }
-//     }
-// }
+        &__member-photo {
+            width: 270px;
+            height: 260px;
+        }
+    }
+}
 
 
 
