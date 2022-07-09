@@ -851,6 +851,7 @@ img {
 .team__list {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 .team__item {
   display: flex;
@@ -947,11 +948,9 @@ img {
   .team {
     padding-bottom: 94px;
   }
-  .team__list {
-    display: flex;
-  }
-  .team__item:not(:last-child) {
-    margin-right: 30px;
+  .team__item {
+    flex: 0 0 25%;
+    max-width: 25%;
   }
   .team__description-field {
     width: 270px;

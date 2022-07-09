@@ -5,6 +5,7 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        margin: -15px;
 
     }
 
@@ -119,14 +120,9 @@
     .team {
         padding-bottom: 94px;
 
-        &__list {
-            display: flex;
-        }
-
         &__item {
-            &:not(:last-child) {
-                margin-right: 30px;
-            }
+            flex: 0 0 25%;
+            max-width: 25%;
         }
 
         &__description-field {
