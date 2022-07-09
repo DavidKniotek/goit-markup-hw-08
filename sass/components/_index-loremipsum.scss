@@ -1,7 +1,9 @@
 .loremipsum {
 
     &__list {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
     }
 
     &__icon {
@@ -43,13 +45,12 @@
 }
 
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 .loremipsum {
     &__item {
-
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
+        padding: 15px;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 }
@@ -64,14 +65,8 @@
         }
 
         &__item {
-
-            &:nth-child(2n+1) {
-                margin-right: 30px;
-            }
-
-            &:nth-child(n + 3) {
-                margin-bottom: 0;
-            }
+            flex: 0 0 50%;
+            max-width: 100%;
         }
 
         &__icon {
@@ -82,7 +77,6 @@
         &__icon-item {
             display: flex;
             justify-content: center;
-            width: 354px;
             height: 120px;
             padding: 25px 0;
             margin-bottom: 30px;
@@ -138,9 +132,8 @@
 
         &__item {
 
-            &:not(:last-child) {
-                margin-right: 30px;
-            }
+            flex: 0 0 25%;
+            max-width: 25%;
         }
 
         &__icon-item {
