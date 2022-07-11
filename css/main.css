@@ -364,6 +364,15 @@ img {
   align-self: center;
 }
 
+@media screen and (min-width: 768px) {
+  .button__portfolio {
+    padding-bottom: 9px;
+  }
+  .button__portfolio-list {
+    flex-wrap: nowrap;
+    margin-right: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .button__portfolio {
     padding-bottom: 50px;
