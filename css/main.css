@@ -97,6 +97,7 @@ img {
 .header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -380,8 +381,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .contact {
-    display: block;
-    margin-left: 101px;
+    display: flex;
+    flex-direction: column;
   }
   .contact__top {
     display: flex;
@@ -953,7 +954,6 @@ img {
   }
 }
 .main-logo {
-  padding-right: 93px;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.2;
@@ -981,11 +981,6 @@ img {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .main-logo {
-    padding-right: 83px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .main-logo {
     padding-right: 93px;
