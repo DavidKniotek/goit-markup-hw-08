@@ -34,10 +34,6 @@
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-property: color, fill;
 
-            &:not(:last-child) {
-                margin-bottom: 10px;
-            }
-
             &:hover svg,
             &:focus svg {
                 color: var(--webstudio-color);
@@ -84,11 +80,24 @@
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .contact {
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
 
 @media screen and (min-width: 1200px) {
 
     .contact {
         display: flex;
+        align-items: center;
+        flex-direction: row;
         margin-left: auto;
 
         &__top {
@@ -96,6 +105,7 @@
         }
 
         &__item {
+            align-items: center;
             margin-right: 30px;
         }
 

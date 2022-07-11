@@ -406,9 +406,6 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color, fill;
   }
-  .contact__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
   .contact__item:hover svg, .contact__item:focus svg {
     color: var(--webstudio-color);
     fill: var(--webstudio-color);
@@ -446,15 +443,23 @@ img {
     transition-property: color, fill;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contact {
     display: flex;
+    align-items: center;
+    flex-direction: row;
     margin-left: auto;
   }
   .contact__top {
     justify-content: center;
   }
   .contact__item {
+    align-items: center;
     margin-right: 30px;
   }
   .contact__icon--envelope {
