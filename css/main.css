@@ -1388,14 +1388,15 @@ input {
 .pics {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 .pics__item {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow;
-}
-.pics__item:not(:last-child) {
-  margin-bottom: 30px;
+  margin: 15px;
+  flex: 0 0 calc(100% - 30px);
+  max-width: calc(100% - 30px);
 }
 .pics__item:hover, .pics__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1420,6 +1421,7 @@ input {
 .pics__description-field {
   border: 1px solid #ECECEC;
   border-top: none;
+  width: 100%;
 }
 .pics__description-title {
   font-family: "Roboto";
@@ -1470,7 +1472,7 @@ input {
   top: 0;
   left: 0;
   width: 100%;
-  height: 294px;
+  height: 100%;
   overflow: hidden;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
@@ -1479,33 +1481,28 @@ input {
   transition-property: top, left, width, height, background-color, transform;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .pics__img {
-    width: 450px;
+    width: 100%;
     height: 294px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .pics__item:nth-child(2n+1) {
-    margin-right: 30px;
+  .pics__item {
+    flex: 0 0 calc(50% - 30px);
+    max-width: calc(50% - 30px);
   }
   .pics__img {
-    width: 354px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .pics__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-  .pics__item:nth-child(3n+3) {
-    margin-right: 0;
-  }
-  .pics__item:nth-last-child(-n+3) {
-    margin-bottom: 0;
+    flex: 0 0 calc(33.3% - 30px);
+    max-width: calc(33.3% - 30px);
   }
   .pics__img {
-    width: 370px;
+    width: 100%;
     height: 294px;
   }
 }
