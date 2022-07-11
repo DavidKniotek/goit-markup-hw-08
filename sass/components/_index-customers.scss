@@ -119,19 +119,14 @@
 
     .customers {
 
+        &__list {
+            justify-content: center;
+            align-items: center;
+        }
+
         &__item {
-            flex: 0 0 33%;
-            max-width: 33%;    
-
-        //     margin-right: 30px;
-
-        //     &:nth-child(3n + 3) {
-        //         margin-right: 0;
-        //     }
-        //     &:nth-child(n + 4) {
-        //         margin-bottom: 0;
-        //     }
-        // }
+            flex: 0 0 calc(33.3% - 30px);
+            max-width: calc(33.3% - 30px);  
     }
 }
 }
