@@ -491,7 +491,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  padding: 15px;
 }
 .customers__item {
   display: flex;
@@ -503,6 +502,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: border-color;
+  margin: 15px;
 }
 .customers__item:nth-child(n+5) {
   margin-bottom: 0;
@@ -574,8 +574,9 @@ img {
 
 @media screen and (max-width: 767px) {
   .customers__item {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
