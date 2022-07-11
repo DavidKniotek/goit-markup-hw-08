@@ -597,9 +597,6 @@ img {
     width: 170px;
     margin-bottom: 0;
   }
-  .customers__item:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 .hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/backgroundimg-mobilex1.jpg");
