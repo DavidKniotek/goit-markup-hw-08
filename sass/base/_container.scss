@@ -30,6 +30,13 @@
         display: flex;
         font-size: 14px;
     }
+    .customers-section & {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
     .footer & {
         display: block;
         padding-top: 60px;
@@ -104,10 +111,6 @@
             display: flex;
             align-items: center;
             padding-bottom: 94px;
-        }
-    
-        .customers-section & {
-            display: flex;
         }
     
         .pic-box & {

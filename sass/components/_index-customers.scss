@@ -3,13 +3,14 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        padding: 15px;
+        margin: -15px;
     }
 
     &__item {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 210px;
         height: 92px;
         border: 1px solid var(--social-media-color);
         border-radius: 4px;
@@ -103,14 +104,13 @@
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
     .customers {
 
         &__item {
-            &:nth-child(2n+1) {
-                margin-right: 30px;
-            }
+            flex: 0 0 50%;
+            max-width: 50%;
         }
     }
 }
@@ -120,17 +120,20 @@
     .customers {
 
         &__item {
-            width: 226px;
-            margin-right: 30px;
+            flex: 0 0 33%;
+            max-width: 33%;    
 
-            &:nth-child(3n + 3) {
-                margin-right: 0;
-            }
-            &:nth-child(n + 4) {
-                margin-bottom: 0;
-            }
-        }
+        //     margin-right: 30px;
+
+        //     &:nth-child(3n + 3) {
+        //         margin-right: 0;
+        //     }
+        //     &:nth-child(n + 4) {
+        //         margin-bottom: 0;
+        //     }
+        // }
     }
+}
 }
 
 @media screen and (min-width: 1200px) {
