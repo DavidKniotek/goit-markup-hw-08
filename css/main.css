@@ -164,6 +164,7 @@ img {
   .footer .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -358,12 +359,6 @@ img {
   align-self: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .button--newsletter {
-    display: block;
-    margin-left: 276px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .button__portfolio {
     padding-bottom: 50px;
@@ -479,11 +474,6 @@ img {
   margin-bottom: 8px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer__list {
-    margin-left: 61px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer__list {
     margin-right: 70px;
@@ -1336,7 +1326,7 @@ input {
   position: relative;
 }
 .newsletter-form__email {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   margin-bottom: 20px;
@@ -1368,13 +1358,14 @@ input {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .newsletter-form__header {
-    text-align: left;
-    margin-left: 273px;
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .newsletter-form__email {
-    display: block;
-    margin-left: 151px;
+    min-width: 250px;
   }
 }
 @media screen and (min-width: 1200px) {
