@@ -197,6 +197,23 @@ input {
     outline: none;
 }
 
+@media screen and (max-width: 767px) {
+    .modal-window {
+        width: 100%;
+
+        &__item-box {
+            width: 100%;
+        }
+
+        &__item-feedback {
+            width: 100%;
+        }
+
+        &__checkbox {
+            flex-wrap: wrap;
+        }
+    }
+}
 
 @media screen and (min-width: 1200px) {
 

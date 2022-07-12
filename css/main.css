@@ -1221,6 +1221,20 @@ input {
   outline: none;
 }
 
+@media screen and (max-width: 767px) {
+  .modal-window {
+    width: 100%;
+  }
+  .modal-window__item-box {
+    width: 100%;
+  }
+  .modal-window__item-feedback {
+    width: 100%;
+  }
+  .modal-window__checkbox {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-window {
     width: 528px;
