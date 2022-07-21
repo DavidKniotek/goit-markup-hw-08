@@ -1015,7 +1015,6 @@ img {
     width: 24px;
     height: 16px;
   }
-
   .menu-container {
     position: fixed;
     top: 0;
@@ -1028,7 +1027,6 @@ img {
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
   }
-
   .menu-container.is-open {
     transform: translateX(0);
   }
@@ -1253,7 +1251,6 @@ input {
     font-size: 14px;
     line-height: 1.7;
   }
-
   .before-checkbox::before {
     margin-left: 14px;
   }
@@ -1262,7 +1259,6 @@ input {
   .navigation {
     display: none;
   }
-
   .mobile-navigation__item {
     font-family: "Roboto";
     font-style: normal;
@@ -1312,7 +1308,6 @@ input {
   .navigation__item:not(:last-child) {
     margin-right: 60px;
   }
-
   .active-page::after {
     position: absolute;
     content: "";
@@ -1328,7 +1323,6 @@ input {
   .navigation__item:not(:last-child) {
     margin-right: 46px;
   }
-
   .active-page::after {
     bottom: -32px;
   }
